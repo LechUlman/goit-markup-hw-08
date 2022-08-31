@@ -135,7 +135,7 @@ body {
   list-style: none;
   display: flex;
   gap: 8px;
-  padding-left: 295px;
+  padding: 94px 318px 50px 310px;
   margin: 0px;
 }
 .button-portfolio {
@@ -166,9 +166,10 @@ body {
   flex-wrap: wrap;
   margin: 0px;
   list-style: none;
-  padding-left: 0px;
-  padding-top: 56px;
-  width: 1170px;
+  padding: 0 0px 94px;
+}
+.portfolio-border {
+  border-bottom: 1px solid var(--productborder);
 }
 .project-title {
   letter-spacing: 0.06em;
