@@ -41,6 +41,7 @@ body {
 
 /* header */
 .header {
+  width: 1200 px;
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
