@@ -24,7 +24,6 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  width: 1600px;
 }
 .container {
   width: 1200px;
@@ -35,14 +34,15 @@ body {
 .blue-text:focus {
   color: var(--blue);
 }
-/*.section {
+.section {
   padding-top: 94px;
-  padding-bottom: 94px;*/
+  padding-bottom: 94px;
+}
 
 /* header */
 .header {
   border-bottom: 1px solid #ececec;
-  margin: 0px;
+  margin: 0 auto;
 }
 .header-style {
   display: flex;
