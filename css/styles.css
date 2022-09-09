@@ -5,14 +5,11 @@
   --darkgrey: #2f303a;
   --grey: #757575;
   --lightgrey: #e5e5e5;
-  --lightcream: #ececec;
   --notblack: #212121;
   --notwhite: #f5f4fa;
-  --footerlinks: rgba(255, 255, 255, 0.6);
+  --footerlinks: #ffffff99;
   --productborder: #eeeeee;
-  --background: rgba(47, 48, 58, 0.4);
   --iconcolor: #afb1b8;
-  --backgroundbackdrop: rgba(000, 000, 000, 0.2);
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -98,13 +95,13 @@ img {
   line-height: 1.14285714;
 }
 .icons-header {
-  fill: currentColor;
+  fill: var(--grey);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.icons-header:focus,
-.icons-header:hover {
+.icons-header-spacing:focus,
+.icons-header-spacing:hover {
   fill: var(--blue);
 }
 .icon-header-spacing {
@@ -387,7 +384,6 @@ img {
   color: var(--white);
   margin: 0;
 }
-
 .address-link {
   color: var(--footerlinks);
 }
