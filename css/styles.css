@@ -81,6 +81,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 32px 27px 31px 345px;
+  color: var(--blue);
 }
 .contact-link-style {
   color: var(--grey);
