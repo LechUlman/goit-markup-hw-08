@@ -35,12 +35,17 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
   margin: 0px;
+  height: 80px;
 }
 .header-style {
   display: flex;
+  padding-left: 15px;
 }
-.logo-box {
-  padding-top: 24px;
+.logo-navigate-box {
+  position: absolute;
+  display: flex;
+  gap: 93px;
+  top: 24px;
 }
 .logo-style {
   font-family: "Raleway";
@@ -58,12 +63,20 @@ img {
 .blue-text:focus {
   color: var(--blue);
 }
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue);
+  transform: translateY(31px);
+  border-radius: 2px;
+}
 .navigate-list {
   display: flex;
-  list-style: none;
   gap: 46px;
   margin: 0;
-  padding: 32px 0 31px 93px;
+  align-items: center;
 }
 
 .link-style {
@@ -72,16 +85,16 @@ img {
   line-height: 1.14285714;
   color: var(--notblack);
 }
-.nav-enter-item {
+.navigate-enter-item {
   color: var(--blue);
 }
 .contact-style {
   gap: 30px;
   display: flex;
-  list-style: none;
   margin: 0;
-  padding: 32px 27px 31px 345px;
-  color: var(--blue);
+  position: absolute;
+  right: 168px;
+  top: 32px;
 }
 .contact-link-style {
   color: var(--grey);
@@ -284,7 +297,7 @@ img {
   gap: 30px;
   justify-content: center;
   margin: 0;
-  padding: 0 15px 94px;
+  padding: 0, 15px;
 }
 .figure {
   margin: 0;
@@ -299,12 +312,11 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
   height: 70px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+
   position: relative;
   text-transform: uppercase;
   top: -70px;
-  padding: 0px 0px;
+  padding: 27px 0px;
 }
 /* team */
 .team-background {
