@@ -532,15 +532,30 @@
           y="6"</use></svg></button>
           <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
           <form class="modal-text">
-            <label class="name-box" class="label-text">Imię</label>
-              <input type="text" class="label-box" name="username">
-                <label class="tel-box" class="label-text">Telefon</label>
-                  <input type="text" class="label-box" name="phone">
-              <label class="emial-box" class="label-text">Email</label>
-                <input type="text" class="label-box" name="email">
-                <label class="form-label" class="label-text">Komentarz</label>
-                  <input type="text" class="label-box" name="commend">
-                
+            <label class="label-boxes">Imię</label>
+              <input type="text" name="username" class="label-box" >
+
+                <label class="label-boxes">Telefon</label>
+                  <input type="text" name="phone" class="label-box" >
+
+              <label class="label-boxes">Email</label>
+                <input type="text" name="email" class="label-box" >
+
+                <label class="label-boxes">Komentarz</label>
+                  <textarea
+                  id="text-box"
+                  name="feedback"
+                  rows="5"
+                  placeholder="Wprowadź tekst"
+                  class="modal-box-text"
+                ></textarea>
+                <div class="modal-checkbox">
+                  <input id="laws-box" type="checkbox" name="rules" value="laws" />
+                  <label for="laws-box" class="laws-style">
+                    Oświadczam iż akceptuję <a class="law-text">Regulamin</a> i <a class="law-text">Politykę Prywatności</a>.
+                  </label>
+                </div><button type="submit" class="submit-button">Wyślij</button>
+              </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -596,5 +596,38 @@ img {
   color: #212121;
   padding-top: 40px;
 }
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
 
+  margin: 2px auto 0px;
+}
+.label-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--grey);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.label-boxes {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--grey);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.label-box {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  outline: none;
+  padding: 0;
+}
 /* end section of backdrop */
