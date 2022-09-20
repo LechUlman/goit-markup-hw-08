@@ -507,20 +507,16 @@
               ></use>
             </svg>
           </a>
-        </section>
-      </div>
-      <div>
-        <form class="form">
-          <label class="form-label">
-            <span class="label-text">Zapisz się do Newslettera</span>
-            <input type="text" class="form-input" name="email" placeholder="E-mail">
-          </label>
-          <button type="submit" class="footer-button">Zapisz się 
-            <svg class="icon-button-footer" width="24" height="24">
-              <use xlink:href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-</form>
+      </div></section>
+        <form class="newsletter-form">
+          <label for="newsletter-box" class="newsletter-heading">Zapisz się do newslettera</label>
+          <div class="newsleter-order-section"> 
+          <input id="newsletter-box" type="text" name="email" placeholder="E-mail" class="newsletter-box"></input>
+          <button type="submit" class="newsletter-button"><span class="newsletter-button-space">Zapisz się</span> <svg class="newsletter-button-icon">
+            <use xlink:href="./images/icons.svg#icon-icon-send" width="24" height="24"></use>
+          </svg></button>
+        </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -533,31 +529,34 @@
           <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
           <form class="modal-text">
             <label class="label-boxes">Imię</label>
-              <input type="text" name="username" class="label-box" >
-
+              <input type="text" name="username" class="label-box">
+              <svg class="form-icons icon-position1">
+                <use xlink:href="./images/icons.svg#icon-person-modal" width="12" height="12"></use>
+              </svg>
                 <label class="label-boxes">Telefon</label>
-                  <input type="text" name="phone" class="label-box" >
-
+                  <input type="text" name="phone" class="label-box">
+                  <svg class="form-icons icon-position2">
+                    <use xlink:href="./images/icons.svg#icon-telephone-modal" width="15" height="15"></use>
+                  </svg>
               <label class="label-boxes">Email</label>
-                <input type="text" name="email" class="label-box" >
-
+                <input type="text" name="email" class="label-box">
+                <svg class="form-icons icon-position3">
+                  <use xlink:href="./images/icons.svg#icon-envelope-modal" width="18" height="18"></use>
+                </svg>
                 <label class="label-boxes">Komentarz</label>
-                  <textarea
-                  id="text-box"
-                  name="feedback"
-                  rows="5"
-                  placeholder="Wprowadź tekst"
-                  class="modal-box-text"
-                ></textarea>
+                  <textarea id="text-box" name="feedback" rows="5" placeholder="Wprowadź tekst"
+                  class="modal-box-text"></textarea>
                 <div class="modal-checkbox">
-                  <input id="laws-box" type="checkbox" name="rules" value="laws" />
                   <label for="laws-box" class="laws-style">
-                    Oświadczam iż akceptuję <a class="law-text">Regulamin</a> i <a class="law-text">Politykę Prywatności</a>.
+                  <input id="laws-box" type="checkbox" name="rules" value="laws" class="checkbox-style"/>
+                  <svg class="tick">
+                    <use xlink:href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                    Oświadczam iż akceptuję <a class="law-text" href="#">Regulamin</a> i <a class="law-text" href="#">Politykę Prywatności</a>.
                   </label>
                 </div><button type="submit" class="submit-button">Wyślij</button>
               </form>
       </div>
-    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
