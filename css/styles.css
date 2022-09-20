@@ -698,7 +698,6 @@ input:checked + .tick {
   border-radius: 3px;
   cursor: pointer;
 }
-
 .tick {
   width: 16px;
   height: 16px;
@@ -707,7 +706,6 @@ input:checked + .tick {
   top: 3px;
   display: none;
 }
-
 .law-text {
   color: var(--blue);
   text-decoration: underline;
@@ -748,16 +746,16 @@ input:checked + .tick {
   height: 18px;
   position: absolute;
 }
-.icon-position1 {
-  top: 107px;
+.icon-vector {
+  top: 109px;
   left: 55px;
 }
-.icon-position2 {
-  top: 174px;
+.icon-phone {
+  top: 178px;
   left: 55px;
 }
-.icon-position3 {
-  top: 240px;
+.icon-vector-1 {
+  top: 245px;
   left: 52px;
 }
 /* end section of backdrop */
