@@ -478,7 +478,7 @@ img {
 .newsletter-form {
   margin-top: 72px;
   padding-left: 77px;
-  width: 570px;
+  width: 650px;
 }
 .newsletter-heading {
   font-weight: 700;
@@ -538,7 +538,6 @@ img {
 .newsletter-button:active {
   background-color: #135a91;
 }
-
 /* backdrop */
 
 .backdrop {
