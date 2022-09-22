@@ -299,6 +299,7 @@ img {
   gap: 30px;
   justify-content: center;
   margin: 0;
+  padding: 0 15px 94px;
 }
 .figure {
   margin: 0;
@@ -339,7 +340,7 @@ img {
   gap: 30px;
   justify-content: center;
   margin: 0;
-  padding: 0 15px 102px;
+  padding: 0 15px 94px;
 }
 .team-item {
   background-color: var(--white);
