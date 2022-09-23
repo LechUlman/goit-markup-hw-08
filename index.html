@@ -14,35 +14,27 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-style container">
-        <div class="logo-navigate-box">
-          <a href="./index.html" class="logo-style"
-            ><span class="blue-text">Web</span>Studio
+      <div class="header__container">
+      <a class="link logo" href="./index.html">Web<span class="logo logo--black">Studio</span>
           </a>
-        <nav class="navigate-list">         
-              <a
-                href="./index.html"
-                class="link-style blue-text active navigate-enter-item"
-                >Agencja</a>
-              <a href="./portfolio.html" class="link-style blue-text"
-                >Portfolio</a>
-              <a href="./index.html" class="link-style blue-text">Kontakt</a>
+        <nav> 
+          <ul class="list header__nav">
+            <li class="list__position"><a class="link link--active" href="./index.html"
+                rel="noopener noreferrer">Agencja</a></li>
+            <li class="list__position"><a class="link link--active" href="./portfolio.html"
+                  rel="noopener noreferrer">Portfolio</a></li>
+              <li class="list__position"><a class="link link--active" href="./index.html"
+                    rel="noopener noreferrer">Kontakt</a></li>
+            </ul>
             </nav>
-          </div>
-        <div class="contact-style container">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contact-link-style blue-text icons-header"
-            >
-              <svg class="icon-header" width="16" height="12">
+        <div class="header__contact">
+            <a class="link header__link" href="mailto:info@devstudio.com" rel="noopener noreferrer">
+              <svg class="icon header__icon" width="16" height="12">
                 <use xlink:href="./images/icons.svg#icon-envelope-1"></use>
               </svg>
-              info@devstudio.com</a
-            ><a
-              href="+48111111111"
-              class="contact-link-style blue-text icons-header"
-            >
-              <svg class="icon-header" width="10" height="16">
+              info@devstudio.com</a>
+              <a class="link header__link" href="+48111111111" rel="noopener noreferrer">
+              <svg class="icon header__icon" width="10" height="16">
                 <use xlink:href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111
@@ -51,129 +43,128 @@
       </div>
     </header>
     <main>
-      <section class="top-section container">
-        <h1 class="top-section-text">
-          EFEKTYWNE ROZWIĄZANIA <br />
+      <section class="top-section">
+        <div class="top-section__layout">
+        <h1 class="top-section__header">
+          EFEKTYWNE ROZWIĄZANIA <br/>
           DLA WASZEGO BIZNESU
         </h1>
-        <button type="button"
-          class="top-section-button"
-          class="modal-btn"
-          
-          data-modal-open
-        >
-          Zamów usługę
-        </button>
+        <button class="button button--color-main" type="button" data-modal-open>Zamów usługę</button>
+        </div>
       </section>
-      <section class="container">
+      <section class="section">
+        <div class="section__container">
         <ul class="speciality-list">
           <li>
-            <div class="icons-box">
-              <svg class="icons-speciality" width="70" height="70">
+            <div class="speciality-list__icon">
+              <svg class="icon" width="70" height="70">
                 <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
               </svg>
             </div>
-            <p class="speciality-header">LOREM IPSUM</p>
-            <p class="speciality-text">
+            <h3 class="speciality-list__heading">LOREM IPSUM</p>
+            <p class="speciality-list_description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons-box">
-              <svg class="icons-speciality" width="70" height="70">
+            <div class="specialisty-list__icon">
+              <svg class="icon" width="70" height="70">
                 <use xlink:href="./images/icons.svg#icon-clock-1"></use>
               </svg>
             </div>
-            <p class="speciality-header">LOREM IPSUM</p>
-            <p class="speciality-text">
+            <p class="speciality-list__heading">LOREM IPSUM</p>
+            <p class="speciality-list__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons-box">
-              <svg class="icons-speciality" width="70" height="70">
+            <div class="specialisty-list__icon">
+              <svg class="icon" width="70" height="70">
                 <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
               </svg>
             </div>
-            <p class="speciality-header">LOREM IPSUM</p>
-            <p class="speciality-text">
+            <p class="speciality-list__heading">LOREM IPSUM</p>
+            <p class="speciality-list__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons-box">
-              <svg class="icons-speciality" width="70" height="70">
+            <div class="specialisty-list__icon">
+              <svg class="icon" width="70" height="70">
                 <use xlink:href="./images/icons.svg#icon-astronaut-1"></use>
               </svg>
             </div>
-            <p class="speciality-header">LOREM IPSUM</p>
-            <p class="speciality-text">
+            <p class="speciality-list__heading">LOREM IPSUM</p>
+            <p class="speciality-list__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="container">
-        <h2 class="service-header">Czym się zajmujemy</h2>
-        <ul class="service-list">
-          <li class="image-size">
-            <figure class="figure">
+      <section class="section">
+        <div class="section__container">
+        <h2 class="section__heading">Czym się zajmujemy</h2>
+        <ul class="list">
+          <li>
+            <figure class="section__figure">
               <img
                 src="./images/computer1.jpg"
                 alt="hard-office-work"
                 width="370"
                 height="294"
-                alt="programing" class="service-list-image"
-              />
-              <figcaption class="image-description">
+                alt="programing">
+              <figcaption class="section__figure-description">
                 Aplikacje komputerowe
               </figcaption>
             </figure>
-          </li class="image-size">
-          <li><figure class="figure">
+          </li>
+          <li><figure class="section__figure">
             <img
               src="./images/mobile-phones.jpg"
               alt="mobiles-phones"
               height="294"
               width="370"
               alt="mobile phones"
-            /><figcaption class="image-description">
+            /><figcaption class="section__figure-description">
               Aplikacje mobilne
             </figcaption>
           </li>
-          <li class="image-size"><figure class="figure">
+          <li><figure class="section__figure">
             <img
               src="./images/page1.jpg"
               alt="colorful-rainbow"
               width="370"
               height="294"
               alt="color palette"
-            /><figcaption class="image-description">
+            /><figcaption class="section__figure-description">
               Rozwiązania graficzne
             </figcaption></figure>
           </li>
         </ul>
       </section>
-      <section class="team-background">
-        <div class="container">
-          <h2 class="team-header">Nasz zespół</h2>
-          <ul class="team-list">
-            <li class="team-item">
-              <img
+      <section class="section section--team">
+        <div class="section__container">
+          <h2 class="section__heading">Nasz zespół</h2>
+          <ul class="list">
+            <li class="list__item">
+              <figure class="img-container">
+              <img class="image-container__image"
                 src="./images/man1.jpg"
                 alt="brown shirt man"
                 height="260"
-                width="270"
-              />
-              <h4 class="team-name">John Doe</h4>
-              <p class="team-card">Product Designer</p>
-              <div class="team-card-icons">
-                <a href="instagram.com">
-                  <svg class="team-card-icon">
+                width="270">
+                <figcaption>
+              <h4 class="img-container__heading">John Doe</h4>
+              <p class="img-container__description">Product Designer</p>
+              </figcaption></figure>
+              <div class="list list--gap">
+                <a class="link" href="instagram.com">
+                  <svg class="icon icon--social">
                     <use
                       href="./images/icons.svg#icon-instagram-2"
                       width="20"
@@ -183,8 +174,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="twitter.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="twitter.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -194,8 +185,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="facebook.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="facebook.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -205,8 +196,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="linkedin.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="linkedin.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -218,20 +209,21 @@
                 </a>
               </div>
             </li>
-            <li class="team-item">
-              <img
+            <li class="list__item"><figure class="img-container">
+              <img class="image-container__image"
                 src="./images/woman1.jpg"
                 alt="blond hair woman"
                 height="260"
-                width="270"
-              />
-              <h4 class="team-name">John Doe</h4>
-              <p class="team-card">Frontend Developer</p>
-              <div class="team-card-icons">
-                <a href="instagram.com">
-                  <svg class="team-card-icon">
+                width="270">
+                <figcaption>
+              <h4 class="img-container__heading">John Doe</h4>
+              <p class="img-container__description">Frontend Developer</p>
+              </figcaption></figure>
+              <div class="list list--gap">
+                <a class="link" href="instagram.com">
+                  <svg class="icon icon--social">
                     <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
+                      href="./images/icons.svg#icon-instagram-2"
                       width="20"
                       height="20"
                       x="12"
@@ -239,8 +231,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="twitter.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="twitter.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -250,8 +242,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="facebook.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="facebook.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -261,8 +253,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="linkedin.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="linkedin.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -274,29 +266,27 @@
                 </a>
               </div>
             </li>
-            <li class="team-item">
-              <img
+            <li class="list__item"><figure class="img-container">
+              <img class="image-conatiner__image"
                 src="./images/man3.jpg"
                 alt="white shirt man"
                 height="260"
-                width="270"
-              />
-              <h4 class="team-name">John Doe</h4>
-              <p class="team-card">Marketing</p>
-              <div class="team-card-icons">
-                <a href="instagram.com">
-                  <svg class="team-card-icon">
+                width="270"><figcaption>
+              <h4 class="img-container__heading">John Doe</h4>
+              <p class="img-container__description">Marketing</p></figcaption></figure>
+              <div class="list list--gap">
+                <a class="link" href="instagram.com">
+                  <svg class="icon icon--social">
                     <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
+                      href="./images/icons.svg#icon-instagram-2"
                       width="20"
                       height="20"
                       x="12"
-                      y="12"
-                    ></use>
+                      y="12"></use>
                   </svg>
                 </a>
-                <a href="twitter.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="twitter.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -306,8 +296,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="facebook.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="facebook.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -317,8 +307,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="linkedin.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="linkedin.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -330,20 +320,19 @@
                 </a>
               </div>
             </li>
-            <li class="team-item">
-              <img
+            <li class="list__item">
+              <img class="image-container__image"
                 src="./images/man2.jpg"
                 alt="black shirt man"
                 height="260"
-                width="270"
-              />
-              <h4 class="team-name">John Doe</h4>
-              <p class="team-card">Ul Designer</p>
-              <div class="team-card-icons">
-                <a href="instagram.com">
-                  <svg class="team-card-icon">
+                width="270">
+              <h4 class="img-container__heading">John Doe</h4>
+              <p class="img-container__description">Ul Designer</p>
+              <div class="list list--gap">
+                <a class="link" href="instagram.com">
+                  <svg class="icon icon--social">
                     <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
+                      href="./images/icons.svg#icon-instagram-2"
                       width="20"
                       height="20"
                       x="12"
@@ -351,8 +340,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="twitter.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="twitter.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -362,8 +351,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="facebook.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="facebook.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -373,8 +362,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a href="linkedin.com">
-                  <svg class="team-card-icon">
+                <a class="link" href="linkedin.com">
+                  <svg class="icon icon--social">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -390,47 +379,47 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <h2 class="our-clients-header">Nasi Klienci</h2>
-          <ul class="our-clients-list">
+        <div class="section__container">
+          <h2 class="section__heading">Nasi Klienci</h2>
+          <ul class="list">
             <li>
-              <a href="index.html">
-                <svg class="our-clients-logo">
+              <a class="link" href="index.html">
+                <svg class="icon icon--activities">
                   <use xlink:href="./images/icons.svg#icon-Client-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="index.html">
-                <svg class="our-clients-logo">
+              <a class="link" href="index.html">
+                <svg class="icon icon--activities">
                   <use xlink:href="./images/icons.svg#icon-Client-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="index.html">
-                <svg class="our-clients-logo">
+              <a class="link" href="index.html">
+                <svg class="icon icon--activities">
                   <use xlink:href="./images/icons.svg#icon-Client-3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="index.html">
-                <svg class="our-clients-logo">
+              <a class="link" href="index.html">
+                <svg class="icon icon--activities">
                   <use xlink:href="./images/icons.svg#icon-Client-4"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="index.html">
-                <svg class="our-clients-logo">
+              <a class="link" href="index.html">
+                <svg class="icon icon--activities">
                   <use xlink:href="./images/icons.svg#icon-Client-5"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="index.html">
-                <svg class="our-clients-logo">
+              <a class="link" href="index.html">
+                <svg class="icon icon--activities">
                   <use xlink:href="./images/icons.svg#icon-Client-6"></use>
                 </svg>
               </a>
@@ -440,31 +429,21 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-box">
-        <div class="footer-style-logo">
-          <a href="./index.html" class="footer-logo">
-            <span class="blue-text">Web</span>Studio</a
-          >
-          <address>
-            <ul class="footer-list">
-              <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
-                <a href="mailto:info@example.com" class="address-link blue-text"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a href="+48111111111" class="address-link blue-text"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
+      <div class="footer__container">
+        <div class="footer__contact">
+          <a class="link logo" href="./index.html">Web<span class="logo logo--white">Studio</span></a>
+          <address class="footer__address">
+            <p class="footer__location">m. Warszawa, Aleje Jerozolimskie 21</p>
+                <a class="link footer__link" href="mailto:info@example.com" rel="noopener noreferrer">info@example.com</a>
+                <a class="link footer__link" href="+48111111111" rel="noopener noreferrer">+48 111 111 111</a>
           </address>
         </div>
-        <section class="footer-social-section">
-          <h2 class="footer-social-heading">dołącz do nas</h2>
-          <a href="instagram.com">
-            <svg class="social-icon-footer">
+        <div class="footer__socials">
+          <h5 class="footer__heading">dołącz do nas</h5>
+          <ul class="list list--gap">
+            <li>
+          <a class="link" href="instagram.com">
+            <svg class="icon icon--social">
               <use
                 xlink:href="./images/icons.svg#icon-instagram-2"
                 width="20"
@@ -473,9 +452,9 @@
                 y="12"
               ></use>
             </svg>
-          </a>
-          <a href="twitter.com">
-            <svg class="social-icon-footer">
+          </a></li><li>
+          <a class="link" href="twitter.com">
+            <svg class="icon icon--social">
               <use
                 xlink:href="./images/icons.svg#icon-twitter-1"
                 width="20"
@@ -484,9 +463,9 @@
                 y="12"
               ></use>
             </svg>
-          </a>
-          <a href="facebook.com">
-            <svg class="social-icon-footer">
+          </a></li><li>
+          <a class="link" href="facebook.com">
+            <svg class="icon icon--social">
               <use
                 xlink:href="./images/icons.svg#icon-facebook-1"
                 width="20"
@@ -495,9 +474,9 @@
                 y="12"
               ></use>
             </svg>
-          </a>
-          <a href="linkedin.com">
-            <svg class="social-icon-footer">
+          </a></li><li>
+          <a class="link" href="linkedin.com">
+            <svg class="icon icon--social">
               <use
                 xlink:href="./images/icons.svg#icon-linkedin-1"
                 width="20"
@@ -506,16 +485,17 @@
                 y="12"
               ></use>
             </svg>
-          </a>
-      </section>
-        <form class="newsletter-form">
-          <label class="newsletter-heading">Zapisz się do newslettera</label>
-          <div class="newsleter-order-section"> 
-          <input type="text" name="email" placeholder="E-mail" class="newsletter-box"></input>
-          <button type="submit" class="newsletter-button"><span class="newsletter-button-space">Zapisz się</span><svg class="newsletter-button-icon">
+          </a></li></ul>
+        </div>
+        <div>
+          <h5 class="footer__heading">Zapisz się do newslettera</h5>
+        <form>
+             <input class="footer__input" type="email" name="email" placeholder="E-mail"></input>
+          <button type="submit" class="button button--color-main button--left" name="subscribe">Zapisz się<svg class="icon-send">
             <use xlink:href="./images/icons.svg#icon-icon-send" width="24" height="24"></use>
           </svg></button>
         </form>
+      </div>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>

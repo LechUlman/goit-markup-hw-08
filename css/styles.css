@@ -34,12 +34,16 @@ img {
 /* header */
 .header {
   border-bottom: 1px solid #ececec;
-  margin: 0px;
-  height: 80px;
 }
-.header-style {
+.header__container {
   display: flex;
-  padding-left: 15px;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 24px 0 25px;
+  gap: 93px;
+  width: 1200px;
+  margin: 0 auto;
 }
 .logo-navigate-box {
   position: absolute;
