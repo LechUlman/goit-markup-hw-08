@@ -6,6 +6,7 @@
   --link-color: #2196f3;
   --button-color: #ffffff;
   --section-background2: #2f303a;
+  --hover-color: #135a91;
   --icon-blue: #2196f3;
   --icon-grey: #afb1b8;
   --top-background: rgba(47, 48, 58, 0.4);
@@ -33,15 +34,14 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0 200px;
-  width: 1600px;
+  width: 100%;
+  height: 600px;
   background-color: var(--gradient-color);
   background-image: url(../images/background-image.jpg);
   background-blend-mode: darken;
-  background-position: center;
+  background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1200px;
   margin: 0 auto;
 }
 .section-top__header {
@@ -75,7 +75,7 @@
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button--color-main:hover {
-  background-color: var(--section-background2);
+  background-color: var(--hover-color);
   outline: none;
 }
 .section {
@@ -262,6 +262,7 @@
   margin-left: 24px;
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
+  fill: var(--background-color);
 }
 /* -----------footer section------------ */
 .button-secondary {
@@ -507,12 +508,12 @@
   background-color: var(--background-color);
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 9px;
+  padding: 4px 0px 0px 0px;
   cursor: pointer;
   transition: background-color 1s ease, border 1s ease;
 }
 .button-close:hover {
-  background-color: var(--section-background2);
+  background-color: var(--hover-color);
   border: 1 px solid var(--icon-blue);
   fill: var(--button-color);
 }
@@ -565,7 +566,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  padding: 6px 16px;
+  padding: 6px 22px 6px 22px;
   color: rgba(117, 117, 117, 0.5);
 }
 .form__terms-and-cond {
@@ -586,19 +587,15 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__link:hover {
-  color: var(--text-color);
-  font-weight: 700;
+  color: var(--hover-color);
+  font-weight: 400;
 }
-/* .form__input:not(:placeholder-shown) {
+.form__input:focus {
   border: 1px solid var(--icon-blue);
   border-radius: 4px;
+  outline: none;
 }
-.form__input:not(:placeholder-shown) ~.form__icon {
-  fill: var(--icon-blue);
-} 
-dla działania w input powinno być placeholder=" "
-*/
-.form__input:focus {
+.form__input:hover {
   border: 1px solid var(--icon-blue);
   border-radius: 4px;
   outline: none;
