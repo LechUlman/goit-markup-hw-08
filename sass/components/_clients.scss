@@ -1,0 +1,38 @@
+.clients {
+  &__container {
+    @extend %container;
+  }
+  &__heading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    color: var(--notblack);
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 94px 0;
+  }
+  &__link {
+    display: flex;
+    width: 155px;
+    height: 82px;
+  }
+  &__logo {
+    fill: var(--iconcolor);
+    border: 1px solid var(--iconcolor);
+    border-radius: 4px;
+  }
+  &__link:hover svg,
+  &__link:focus svg {
+    fill: var(--blue);
+    border: var(--blue) solid 1px;
+  }
+}

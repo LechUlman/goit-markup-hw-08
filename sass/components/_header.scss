@@ -1,34 +1,93 @@
 .header {
-  border-bottom: 1px solid $header-border-color;
-
+  border-bottom: 1px solid #ececec;
+  margin: 0px;
+  height: 80px;
   &__container {
-    @include set-flex(row, flex-start);
-    align-content: center;
-    padding: 24px 0 25px;
-    gap: 93px;
-    width: 1200px;
-    margin: 0 auto;
-  }
-
-  &__contact {
-    // display: flex;default: row (flex-direction),flex-start (justify-content), stretch (align-items)
-    @include set-flex(row);
-    column-gap: 50px;
-    margin-left: auto;
-
-    & .icon {
-      margin-right: 10px;
-    }
-  }
-
-  &__link {
-    @include set-flex(row, flex-start, stretch);
+    @extend %container;
+    padding-left: 15px;
   }
 
   &__nav {
-    @include set-flex(row, flex-start, stretch);
-    @include font-atr(500, 1.14, 0.02em);
-    color: $bolded-text-color;
-    column-gap: 46px;
+    position: absolute;
+    display: flex;
+    gap: 93px;
+    top: 24px;
   }
+  &__contacts {
+    gap: 30px;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    right: 168px;
+    top: 32px;
+    &--style {
+      color: var(--grey);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.14285714;
+      fill: var(--grey);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend .text--blue;
+      @extend .icon--fill;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header__nav {
+    gap: 83px;
+  }
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    position: absolute;
+    right: 15px;
+    top: 21px;
+  }
+}
+
+.nav__link {
+  display: flex;
+  gap: 46px;
+  margin: 0;
+  align-items: center;
+  &--style {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14285714;
+    color: var(--notblack);
+    &:hover,
+    &:focus {
+      color: var(--blue);
+    }
+  }
+  &--style1 {
+    @extend .nav__link--style;
+    color: var(--blue);
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--blue);
+      transform: translateY(31px);
+      border-radius: 2px;
+    }
+    &:hover,
+    &:focus {
+      color: var(--blue);
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav__link {
+    gap: 60px;
+  }
+}
+
+.header__icons--spacing {
+  margin-right: 10px;
 }
