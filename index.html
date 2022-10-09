@@ -32,6 +32,16 @@
             <a href="./index.html" class="nav__link--style">Kontakt </a>
           </nav>
         </div>
+        <button
+          type="button"
+          class="header__menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__menu--icon" width="24" height="16">
+            <use xlink:href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <div class="header__contacts">
           <a href="mailto:info@devstudio.com" class="header__contacts--style"
             ><svg class="header__icons--spacing" width="16" height="12">
@@ -50,6 +60,58 @@
       </div>
     </header>
     <main>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="js-close-menu">
+          <svg class="modal__button--close">
+            <use
+              xlink:href="./images/icons.svg#icon-close-button"
+              width="18"
+              height="18"
+            ></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-item--style1" href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-item--style" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-item--style" href="./index.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contact-list">
+          <div class="mobile-menu__dials">
+            <a class="mobile-menu__phone" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+
+            <a class="mobile-menu__email" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </div>
+
+          <div class="mobile-menu__social-list">
+            <a class="mobile-menu__social-link" href="./index.html"
+              >Instagram</a
+            >
+            <a class="mobile-menu__social-link" href="./index.html">Twitter</a>
+            <a class="mobile-menu__social-link" href="./index.html"
+              >Facebook
+            </a>
+            <a class="mobile-menu__social-link" href="./index.html">Linkedin</a>
+          </div>
+        </div>
+      </div>
       <section class="services">
         <div class="services__container">
           <h1 class="services__heading">
@@ -62,61 +124,59 @@
         </div>
       </section>
       <section class="specifications">
-        <ul class="specifications__container">
-          <li class="specifications__item">
-            <div class="icons__box">
-              <svg class="icons__box--spacing" width="70" height="70">
-                <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
-              </svg>
-            </div>
-            <h2 class="specifications__heading">LOREM IPSUM</h2>
+        <div class="specifications__container">
+          <ul class="specifications__list">
+            <li class="specifications__item">
+              <div class="icons__box">
+                <svg class="icons__box--spacing" width="70" height="70">
+                  <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h2 class="specifications__heading">LOREM IPSUM</h2>
 
-            <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Nam vel arcu sem. Sed <br />
-              non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li class="specifications__item">
-            <div class="icons__box">
-              <svg class="icons__box--spacing" width="70" height="70">
-                <use xlink:href="./images/icons.svg#icon-clock-1"></use>
-              </svg>
-            </div>
-            <h2 class="specifications__heading">LOREM IPSUM</h2>
-            <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Nam vel arcu sem. Sed <br />
-              non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li class="specifications__item">
-            <div class="icons__box">
-              <svg class="icons__box--spacing" width="70" height="70">
-                <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
-              </svg>
-            </div>
-            <h2 class="specifications__heading">LOREM IPSUM</h2>
-            <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Nam vel arcu sem. Sed <br />
-              non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li class="specifications__item">
-            <div class="icons__box">
-              <svg class="icons__box--spacing" width="70" height="70">
-                <use xlink:href="./images/icons.svg#icon-astronaut-1"></use>
-              </svg>
-            </div>
-            <h2 class="specifications__heading">LOREM IPSUM</h2>
-            <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Nam vel arcu sem. Sed <br />
-              non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+              <p class="specifications__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="specifications__item">
+              <div class="icons__box">
+                <svg class="icons__box--spacing" width="70" height="70">
+                  <use xlink:href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h2 class="specifications__heading">LOREM IPSUM</h2>
+              <p class="specifications__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="specifications__item">
+              <div class="icons__box">
+                <svg class="icons__box--spacing" width="70" height="70">
+                  <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h2 class="specifications__heading">LOREM IPSUM</h2>
+              <p class="specifications__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="specifications__item">
+              <div class="icons__box">
+                <svg class="icons__box--spacing" width="70" height="70">
+                  <use xlink:href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h2 class="specifications__heading">LOREM IPSUM</h2>
+              <p class="specifications__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="specializations">
         <div class="specializations__container">
@@ -129,6 +189,10 @@
                   width="370"
                   height="294"
                   alt="programing"
+                  srcset="
+                    ./images/computer1@x2.jpg 2x,
+                    ./images/computer1@x3.jpg 3x
+                  "
                 />
                 <figcaption class="specializations__items--text">
                   Aplikacje komputerowe
@@ -142,6 +206,10 @@
                   width="370"
                   height="294"
                   alt="mobile phones"
+                  srcset="
+                    ./images/mobile-phones@x2.jpg 2x,
+                    ./images/mobile-phones@x3.jpg 3x
+                  "
                 />
                 <figcaption class="specializations__items--text">
                   Aplikacje Mobilne
@@ -155,6 +223,7 @@
                   width="370"
                   height="294"
                   alt="color palette"
+                  srcset="./images/page1@x2.jpg 2x, ./images/page1@x3.jpg 3x"
                 />
                 <figcaption class="specializations__items--text">
                   Rozwiazania graficzne
@@ -165,284 +234,296 @@
         </div>
       </section>
       <section class="team">
-        <div class="team__container">
+        <div>
           <h2 class="team__heading">Nasz zespół</h2>
-          <ul class="team__list">
-            <li class="worker">
-              <img
-                src="./images/man1.jpg"
-                alt="brown shirt man"
-                width="270"
-                height="260"
-              />
-              <h4 class="worker__heading">Jon Doe</h4>
-              <p class="worker__text">Product Designer</p>
-              <div class="worker__socials">
-                <a class="worker__socials--icon" href="instagram.com">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="twitter.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-twitter-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="facebook.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-facebook-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="linkedin.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-linkedin-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="worker">
-              <img
-                src="./images/woman1.jpg"
-                alt="blond hair woman"
-                width="270"
-                height="260"
-              />
-              <h4 class="worker__heading">Jon Doe</h4>
-              <p class="worker__text">Frontend Developer</p>
-              <div class="worker__socials">
-                <a href="instagram.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="twitter.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-twitter-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="facebook.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-facebook-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="linkedin.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-linkedin-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="worker">
-              <img
-                src="./images/man3.jpg"
-                alt="white shirt man"
-                width="270"
-                height="260"
-              />
-              <h4 class="worker__heading">Jon Doe</h4>
-              <p class="worker__text">Marketing</p>
-              <div class="worker__socials">
-                <a href="instagram.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="twitter.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-twitter-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="facebook.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-facebook-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="linkedin.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-linkedin-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="worker">
-              <img
-                src="./images/man2.jpg"
-                alt="black shirt man"
-                width="270"
-                height="260"
-              />
-              <h4 class="worker__heading">Jon Doe</h4>
-              <p class="worker__text">UI Designer</p>
-              <div class="worker__socials">
-                <a href="instagram.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-instagram-2"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="twitter.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-twitter-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="facebook.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-facebook-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="linkedin.com" class="worker__socials--icon">
-                  <svg class="worker__socials--icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-linkedin-1"
-                      width="20"
-                      height="20"
-                      x="12"
-                      y="12"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-          </ul>
+          <div class="team__container">
+            <ul class="team__list">
+              <li class="worker">
+                <img
+                  src="./images/man1.jpg"
+                  alt="brown shirt man"
+                  width="270"
+                  height="260"
+                  class="worker__photo"
+                  srcset="./images/man1@x2.jpg 2x, ./images/man1@x3.jpg 3x"
+                />
+                <h4 class="worker__heading">Jon Doe</h4>
+                <p class="worker__text">Product Designer</p>
+                <div class="worker__socials">
+                  <a class="worker__socials--icon" href="instagram.com">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="twitter.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="facebook.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="linkedin.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="worker">
+                <img
+                  src="./images/woman1.jpg"
+                  alt="blond hair woman"
+                  width="270"
+                  height="260"
+                  class="worker__photo"
+                  srcset="./images/woman1@x2.jpg 2x, ./images/woman1@x3.jpg 3x"
+                />
+                <h4 class="worker__heading">Jon Doe</h4>
+                <p class="worker__text">Frontend Developer</p>
+                <div class="worker__socials">
+                  <a href="instagram.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="twitter.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="facebook.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="linkedin.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="worker">
+                <img
+                  src="./images/man3.jpg"
+                  alt="white shirt man"
+                  width="270"
+                  height="260"
+                  class="worker__photo"
+                  srcset="./images/man3@x2.jpg 2x, ./images/man3@x3.jpg 3x"
+                />
+                <h4 class="worker__heading">Jon Doe</h4>
+                <p class="worker__text">Marketing</p>
+                <div class="worker__socials">
+                  <a href="instagram.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="twitter.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="facebook.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="linkedin.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="worker">
+                <img
+                  src="./images/man2.jpg"
+                  alt="black shirt man"
+                  width="270"
+                  height="260"
+                  class="worker__photo"
+                  srcset="./images/man2@x2.jpg 2x, ./images/man2@x3.jpg 3x"
+                />
+                <h4 class="worker__heading">Jon Doe</h4>
+                <p class="worker__text">UI Designer</p>
+                <div class="worker__socials">
+                  <a href="instagram.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-instagram-2"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="twitter.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-twitter-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="facebook.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-facebook-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="linkedin.com" class="worker__socials--icon">
+                    <svg class="worker__socials--icon">
+                      <use
+                        xlink:href="./images/icons.svg#icon-linkedin-1"
+                        width="20"
+                        height="20"
+                        x="12"
+                        y="12"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section>
         <div class="clients">
-          <div class="clients__container">
+          <div>
             <h2 class="clients__heading">Nasi klienci</h2>
-            <ul class="clients__list">
-              <li>
-                <a href="index.html" class="clients__link">
-                  <svg class="clients__logo">
-                    <use xlink:href="./images/icons.svg#icon-Client-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="index.html" class="clients__link">
-                  <svg class="clients__logo">
-                    <use xlink:href="./images/icons.svg#icon-Client-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="index.html" class="clients__link">
-                  <svg class="clients__logo">
-                    <use xlink:href="./images/icons.svg#icon-Client-3"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="index.html" class="clients__link">
-                  <svg class="clients__logo">
-                    <use xlink:href="./images/icons.svg#icon-Client-4"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="index.html" class="clients__link">
-                  <svg class="clients__logo">
-                    <use xlink:href="./images/icons.svg#icon-Client-5"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="index.html" class="clients__link">
-                  <svg class="clients__logo">
-                    <use xlink:href="./images/icons.svg#icon-Client-6"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <div class="clients__container">
+              <div class="clients__list">
+                <div class="clients__list--element">
+                  <a href="index.html" class="clients__link">
+                    <svg class="clients__logo">
+                      <use xlink:href="./images/icons.svg#icon-Client-1"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="clients__list--element">
+                  <a href="index.html" class="clients__link">
+                    <svg class="clients__logo">
+                      <use xlink:href="./images/icons.svg#icon-Client-2"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="clients__list--element">
+                  <a href="index.html" class="clients__link">
+                    <svg class="clients__logo">
+                      <use xlink:href="./images/icons.svg#icon-Client-3"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="clients__list--element">
+                  <a href="index.html" class="clients__link">
+                    <svg class="clients__logo">
+                      <use xlink:href="./images/icons.svg#icon-Client-4"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="clients__list--element">
+                  <a href="index.html" class="clients__link">
+                    <svg class="clients__logo">
+                      <use xlink:href="./images/icons.svg#icon-Client-5"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="clients__list--element">
+                  <a href="index.html" class="clients__link">
+                    <svg class="clients__logo">
+                      <use xlink:href="./images/icons.svg#icon-Client-6"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -456,13 +537,15 @@
             </a>
             <address>
               <ul class="footer__address">
-                <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-                <li>
+                <li class="footer__address--map">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li class="footer__address--style">
                   <a href="mailto:info@devstudio.com" class="footer__contact">
                     info@devstudio.com
                   </a>
                 </li>
-                <li>
+                <li class="footer__address--style">
                   <a href="tel:+48111111111" class="footer__contact">
                     +48 111 111 111
                   </a>
@@ -519,32 +602,32 @@
               </a>
             </div>
           </section>
-          <div>
-            <form class="newsletter">
-              <label for="newsletter-box" class="newsletter__heading"
-                >Zapisz się do newslettera
-              </label>
-              <div class="newsletter__order">
-                <input
-                  id="newsletter-box"
-                  type="text"
-                  name="email"
-                  placeholder="E-mail"
-                  class="newsletter__box"
-                />
-                <button type="submit" class="newsletter__button">
-                  <span class="newsletter__button--space">Zapisz się</span
-                  ><svg class="button__icon">
-                    <use
-                      xlink:href="./images/icons.svg#icon-icon-send"
-                      width="24"
-                      height="24"
-                    ></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+        </div>
+        <div>
+          <form class="newsletter">
+            <label for="newsletter-box" class="newsletter__heading"
+              >Zapisz się do newslettera
+            </label>
+            <div class="newsletter__order">
+              <input
+                id="newsletter-box"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+                class="newsletter__box"
+              />
+              <button type="submit" class="newsletter__button">
+                <span class="newsletter__button--space">Zapisz się</span
+                ><svg class="button__icon">
+                  <use
+                    xlink:href="./images/icons.svg#icon-icon-send"
+                    width="24"
+                    height="24"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -553,7 +636,7 @@
         <button type="button" class="modal__button" data-modal-close>
           <svg class="modal__button--close">
             <use
-              xlink:href="./images/icons.svg#icon-close-black-18dp-2-1"
+              xlink:href="./images/icons.svg#icon-cross"
               width="11"
               height="11"
               x="4"
@@ -566,9 +649,9 @@
         <form class="modal__forms">
           <label for="name-box" class="details__heading"> Imie</label>
           <input id="name-box" type="text" name="username" class="details" />
-          <svg class="label__icons label__icons--Vector">
+          <svg class="label__icons label__icons--Vector1">
             <use
-              xlink:href="./images/icons.svg#icon-Vector"
+              xlink:href="./images/icons.svg#icon-Vector1"
               width="12"
               height="12"
             ></use>
@@ -609,9 +692,8 @@
           ></textarea>
 
           <div class="checkbox">
-            <label for="laws-box" class="checkbox__label">
+            <label class="checkbox__label">
               <input
-                id="laws-box"
                 type="checkbox"
                 name="rules"
                 value="laws"
@@ -620,6 +702,7 @@
               <svg class="checkbox__image">
                 <use xlink:href="./images/icons.svg#icon-check"></use>
               </svg>
+
               Oświadczam iż akceptuję
               <a class="checkbox__text" href="#">Regulamin</a> i
               <a class="checkbox__text" href="#">Politykę Prywatności</a>.
@@ -630,6 +713,8 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

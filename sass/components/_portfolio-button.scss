@@ -1,9 +1,15 @@
 .filter {
   display: flex;
+
   gap: 8px;
-  margin: 0px;
+  margin: 0 auto;
   list-style: none;
-  padding: 94px 318px 50px 310px;
+  flex-wrap: wrap;
+  padding: 60px 0 40px;
+  justify-content: center;
+  &__container {
+    margin: 0 auto;
+  }
   &__btn {
     background-color: var(--notwhite);
     border-width: 0;
@@ -22,5 +28,15 @@
       background-color: var(--blue);
       color: var(--white);
     }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .filter {
+    padding: 60px 0 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding: 94px 0 50px;
   }
 }
